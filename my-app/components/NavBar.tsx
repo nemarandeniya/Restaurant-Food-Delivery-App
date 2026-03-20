@@ -10,7 +10,7 @@ const NavBar = () => {
 
     return (
         <div>
-            <div className='flex justify-between fixed w-full px-6 py-8 bg-gray-900/80 backdrop-blur-md border-b border-gray-800 uppercase'>
+            <div className='flex mt-6 text-cyan-50 shadow-2xl justify-between fixed w-full px-6 py-8 bg-gray-900/80 backdrop-blur-md border-b border-gray-800 uppercase z-50'>
                 <div className="hidden md:flex gap-4 flex-1">
                     <Link href="/">Homepage</Link>
                     <Link href="/menu">Menu</Link>
