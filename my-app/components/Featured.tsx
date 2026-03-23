@@ -13,7 +13,13 @@ const Featured = () => {
                         {/* Image Container */}
                         {item.img && (
                             <div className="relative flex-1 w-60 hover:rotate-3 transition-all duration-300">
-                                <Image src={item.img} alt="" fill className='object-cover' />
+                                <Image
+                                    src={item.img}
+                                    alt=""
+                                    sizes='100vw,50vw'
+                                    fill
+                                    className='object-cover'
+                                />
                             </div>
                         )}
                         <div className="flex-1 flex flex-col gap-4 items-center text-center">

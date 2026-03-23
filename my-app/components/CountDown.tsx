@@ -5,7 +5,7 @@ import Countdown from 'react-countdown'
 const endingDate = new Date("2026-4-1")
 const CountDown = () => {
     return (
-        <Countdown date={endingDate} className='text-white text-2xl md:text-4xl' />
+        <Countdown date={endingDate} className='text-amber-500 text-2xl md:text-4xl' />
     )
 }
 

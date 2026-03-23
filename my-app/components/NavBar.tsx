@@ -3,6 +3,7 @@ import React from 'react'
 import Menu from './Menu'
 import { FaPhone } from "react-icons/fa";
 import CartIcon from './CartIcon';
+import Image from 'next/image';
 
 const NavBar = () => {
 
@@ -10,14 +11,16 @@ const NavBar = () => {
 
     return (
         <div>
-            <div className='flex mt-6 text-cyan-50 shadow-2xl justify-between fixed w-full px-6 py-8 bg-gray-900/80 backdrop-blur-md border-b border-gray-800 uppercase z-50'>
+            <div className='flex mt-6 text-cyan-50 items-center justify-center shadow-2xl justify-between fixed w-full px-6 py-6 bg-gray-300/80 backdrop-blur-md border-b border-gray-800 uppercase z-50'>
                 <div className="hidden md:flex gap-4 flex-1">
                     <Link href="/">Homepage</Link>
                     <Link href="/menu">Menu</Link>
                     <Link href="/contact">Contact</Link>
                 </div>
-                <Link href="/" className='text-xl text-center font-mono font-bold flex-1'>
-                    La Trattoria
+                <Link href="/" className='flex flex-col items-center justify-center flex-1'>
+                    <Image src="/icon3.png" alt='' width={60}
+                        height={80} />
+                    <span className=' text-md text-black text-center font-serif font-bold'>La Trattoria</span>
                 </Link>
                 <div className="md:hidden">
                     <Menu />
